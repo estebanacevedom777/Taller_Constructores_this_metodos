@@ -3,6 +3,18 @@
 Etapa 1. El objeto sin constructor
 * Porque todavía no se le han dado valores al paquete. Como no tiene constructor, Java pone automáticamente unos valores por defecto: los textos quedan en null, el peso en 0.0 y asegurado en false.
 
+Etapa 2. Constructor con parámetros y this
+* Se imprime así porque el constructor guarda bien los datos usando this. Por eso aparece el código P-001, el destino Manizales, el peso 3.0 kg y que está asegurado: true.
+
+Etapa 3. Sobrecarga de constructores y this(...)
+*Se imprimen así porque los constructores ya tienen esos valores por defecto. El P-002 queda con destino Pereira y el P-003 queda con “Por asignar”. Los dos tienen 1.0 kg y no tienen seguro.
+
+Etapa 4. Métodos con parámetros y valor de retorno
+El costo se calcula según el peso de cada paquete. P1 cuesta 23.000, P2 5.000 y P3 12.500. Al sumar los tres, da un total de 40.500.
+
+Etapa 5. Sobrecarga de métodos
+Se imprimen 20.000 y 4.000 porque se está usando la tarifa de 4.000 por kilo. La tercera llamada no funciona porque el método no está hecho para recibir un texto (String).
+
 ## 10. Preguntas de comprensión
 
 1. ¿Qué diferencias hay entre un constructor y un método? Menciona al menos tres.
